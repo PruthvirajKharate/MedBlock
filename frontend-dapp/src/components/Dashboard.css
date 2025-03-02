@@ -1,0 +1,9 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Ensures even spacing */
+  align-items: center; /* Align items vertically */
+  gap: 16px;
+  max-width: 100%;
+  padding: 20px;
+}

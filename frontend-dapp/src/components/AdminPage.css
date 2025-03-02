@@ -1,0 +1,29 @@
+.mainPage {
+  position: absolute;
+  top: 2.5vh;
+  left: 270px;
+  width: calc(100% - 290px);
+  height: 95vh; /* Fixed height to prevent growing beyond viewport */
+  background: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: left 0.3s ease, width 0.3s ease;
+  overflow: auto; /* Allows scrolling when content overflows */
+}
+
+/* Adjust when sidebar is collapsed */
+.sidebar.collapsed + .mainPage {
+  left: 100px;
+  width: calc(100% - 120px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mainPage {
+    left: 100px;
+    width: calc(100% - 120px);
+    height: 100vh; /* Ensure full screen coverage */
+    overflow: auto; /* Enables scrolling for content */
+  }
+}
