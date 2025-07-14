@@ -6,15 +6,16 @@ import HospitalRegistration from "./components/HospitalRegistration";
 import AdminPage from "./components/AdminPage";
 import Temp from "./components/temp";
 import Default_page from "./components/Admin_components/Default_page";
-import Doctor_page from "./components/Admin_components/Doctor_page";
+import Doctor_page from "./components/DoctorPage";
 import Patient_page from "./components/Admin_components/Patient_page";
+import UserRegistration from "./components/UserRegistration";
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<HospitalRegistration />}></Route>
+          <Route path="/" element={<UserRegistration />}></Route>
           <Route path="/admin" element={<AdminPage />}>
             <Route index element={<Default_page />}></Route>
             <Route path="doctor" element={<Doctor_page />} />
